@@ -1,0 +1,194 @@
+{% extends 'base.html' %} {% block title %}Home{% endblock title %} {% block homeactive %}active{% endblock homeactive %} {% block body %} {% load static %}
+<style>
+    #car {
+        height: 100%;
+        width: 100%;
+    }
+    
+    h6 {
+        font-family: 'Playfair Display', serif;
+        color: #153e90;
+        text-align: left;
+    }
+    
+    p {
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-align: left;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        background-color: #efd9d1;
+    }
+    
+    .carousel,
+    .item,
+    .active {
+        height: 100%;
+    }
+    
+    #blg {
+        float: right;
+    }
+    
+    #cover {
+        text-align: center;
+    }
+    
+    .carousel-inner {
+        height: 100%;
+    }
+    
+    .carousel {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .carousel .carousel-inner {
+        height: 100%;
+    }
+    
+    #mainn {
+        text-align: center;
+        margin: auto;
+        height: 513px;
+        width: 990px;
+    }
+    
+    .img {
+        float: left;
+        width: 70%;
+    }
+    
+    .text {
+        float: right;
+        width: 30%;
+    }
+    
+    .card1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .text {
+        text-align: left;
+        margin-left: 50px;
+    }
+    
+    #vid1 {
+        float: left;
+    }
+    
+    #vid2 {
+        float: right;
+    }
+    
+    hr {
+        color: grey;
+    }
+    
+    .card-body {
+        background-color: #f4eeed;
+    }
+    
+    #foot {
+        size: 10px;
+        text-align: center;
+    }
+    
+    .instagram-media {
+        float: left;
+    }
+    
+    #righty {
+        float: right;
+    }
+    
+    #lefty {
+        background-color: black;
+    }
+</style>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item  active ">
+            <img src="static/images/trend.png" width="1200" height="600" class="d-block w-100" alt="...">
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container my-2 ">
+
+    <div class="row mb-2 my-3" id="mainn">
+        <div class="col-md-6 img " id="blog">
+            <img src="static/images/blogger.png" width="550" height="465">
+        </div>
+        <div class="text">
+            <div class="container mx-4" style=" height:513px ; width:410px;">
+                <h3 style="margin-top:-7" ;>How to be in a Trend</h3>
+                <p> Searching for online style inspiration, it’s easy to fall the black hole of Insta-hell. When you finally look up from your phone, you realise you’ve spent two whole days scrolling through feeds – and you’re still in your dressing gown,
+                    with no idea what to wear (we’ve all been there). Which sort of defeats the point. Well never fear, we’ve done the hard search for you. From our favourite Indian influencers to the best missives from India and the coolest New , read
+                    on for our definitive guide to the best fashion blogs, and for even more inspiration, do head to our separate black fashion influencer round-up. on for our definitive guide to the best fashion blogs, and for even more inspiration,
+                    do head to our separate black fashion influencer round-up.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container  my-1" id="cover">
+    <img src="static/images/cover.png" width="950" height="600">
+</div>
+
+<div class="container" style="background-color:#efd9d1; height:100;">
+
+</div>
+<div class="container card1 my-2" style="width: 982px; ">
+    <div class="card">
+
+
+        <div class="card-body">
+            <h5 class="card-title">Why You Should Start a Fashion Blog?</h5>
+            <img src="static/images/pic1.png" style="width:500px">
+
+            <p class="card-text">If you are passionate about fashion and style, then you must have seen some top fashion bloggers and influencers on Instagram. These fashion blogs not only provide a platform to the bloggers, but they also bring lots of opportunities their
+                way. You will be surprised to discover the many ways fashion bloggers make money from their blogs. According to Harper’s Bazaar, designers and top brands spend over a BILLION dollar each year advertising on Instagram alone.</p>
+            <h5 class="card-title">Top Fashion Blogs That Are Crushing it in 2021</h5>
+            <p>Apart from money, a fashion blog allows you to express yourself in the most creative way. Here are some of the top fashion blog examples that you can follow for inspiration.</p>
+            <a href="/app1" class="btn btn-info">Explore</a>
+            <p class="my-4">One thing you’ll notice about each of the top fashion blog examples above, is that they all have their own unique voice, personality, and taste in fashion. These fashion bloggers bring their own unique perspective to highlight their favorite
+                products, merchandise, and brands. If you believe that you have a unique take on fashion and style, then you should definitely start a fashion blog. While setting up the fashion blog part is easy, like all important things in life making
+                the blog popular and monetizing it requires effort. However if you do it right, then you’ll certainly find the experience to be rewarding and fulfilling.</p>
+
+        </div>
+    </div>
+</div>
+<div class="container" style="background-color:#efd9d1; height:100;">
+
+</div>
+
+
+<div class="container">
+    <video width="500" height="260" controls id="vid1">
+        <source src="static/images/video1.mp4" type="video/mp4">
+        
+      Your browser does not support the video tag.
+      </video>
+    <video width="500" height="260" controls id="vid2">
+        <source src="static/images/video2.mp4" type="video/mp4">
+        
+      Your browser does not support the video tag.
+      </video>
+</div>
+
+
+
+{% endblock body %}
